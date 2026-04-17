@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SkillSync | Onboarding</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#191c1d",
+                    "surface-bright": "#f8f9fa",
+                    "on-secondary-fixed-variant": "#004f4f",
+                    "surface-tint": "#0056d2",
+                    "primary": "#0040a1",
+                    "secondary-fixed": "#93f2f2",
+                    "primary-fixed-dim": "#b2c5ff",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-tertiary": "#ffffff",
+                    "background": "#f8f9fa",
+                    "surface-container": "#edeeef",
+                    "inverse-primary": "#b2c5ff",
+                    "secondary-container": "#90efef",
+                    "error": "#ba1a1a",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#006e6e",
+                    "surface-container-high": "#e7e8e9",
+                    "inverse-surface": "#2e3132",
+                    "surface-variant": "#e1e3e4",
+                    "on-primary-fixed": "#001847",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed": "#002020",
+                    "surface": "#f8f9fa",
+                    "on-surface-variant": "#424654",
+                    "secondary-fixed-dim": "#76d6d5",
+                    "outline-variant": "#c3c6d6",
+                    "tertiary-fixed": "#e8ddff",
+                    "tertiary-fixed-dim": "#cfbdff",
+                    "surface-container-highest": "#e1e3e4",
+                    "outline": "#737785",
+                    "inverse-on-surface": "#f0f1f2",
+                    "on-error": "#ffffff",
+                    "on-background": "#191c1d",
+                    "on-primary-container": "#ccd8ff",
+                    "primary-fixed": "#dae2ff",
+                    "tertiary-container": "#6d23f9",
+                    "surface-dim": "#d9dadb",
+                    "tertiary": "#5300cd",
+                    "on-tertiary-fixed-variant": "#5300cd",
+                    "on-tertiary-fixed": "#22005d",
+                    "on-primary-fixed-variant": "#0040a1",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#e0d2ff",
+                    "primary-container": "#0056d2",
+                    "surface-container-low": "#f3f4f5",
+                    "secondary": "#006a6a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- Top Navigation (Shell Visible) -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-xl shadow-slate-900/5">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<a href="index.html" class="text-2xl font-black text-slate-900 dark:text-white tracking-tighter font-headline block">SkillSync</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 transition-colors uppercase tracking-wider text-xs" href="#">Find Jobs</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 transition-colors uppercase tracking-wider text-xs" href="#">Recruiters</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 transition-colors uppercase tracking-wider text-xs" href="#">How it Works</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-5 py-2 text-slate-600 font-medium hover:text-blue-600 transition-colors">Login</button>
+<button class="px-6 py-2 bg-primary text-on-primary rounded-xl font-bold shadow-lg shadow-primary/20 transition-all hover:scale-[1.02] active:scale-95">Sign Up</button>
+</div>
+</div>
+</nav>
+<main class="min-h-screen pt-24 pb-20 px-6 max-w-7xl mx-auto">
+<!-- Editorial Header Section -->
+<header class="mb-12 md:ml-12">
+<span class="text-tertiary font-bold tracking-[0.2em] text-[10px] uppercase block mb-3">Onboarding — Phase 01</span>
+<h1 class="font-headline font-extrabold text-4xl md:text-6xl text-on-surface tracking-tight max-w-2xl leading-[1.1]">
+                Intelligence starts with <span class="text-primary italic">your story.</span>
+</h1>
+<p class="mt-6 text-on-surface-variant text-lg max-w-xl">
+                Upload your resume and let SkillSync AI map your unique career DNA to global opportunities.
+            </p>
+</header>
+<!-- Main Onboarding Canvas -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left: Interaction Zone (Bento Layout) -->
+<div class="lg:col-span-7 space-y-6">
+<!-- Drag & Drop Zone -->
+<section class="bg-surface-container-lowest rounded-xl p-8 border-2 border-dashed border-outline-variant/30 hover:border-primary/40 transition-colors group cursor-pointer relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative flex flex-col items-center py-10 text-center">
+<div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="cloud_upload">cloud_upload</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-2">Drop your resume here</h3>
+<p class="text-on-surface-variant text-sm mb-6">PDF or DOCX files supported (Max 5MB)</p>
+<button class="bg-secondary-container text-on-secondary-container px-8 py-3 rounded-xl font-bold text-sm tracking-wide transition-all hover:shadow-md active:scale-95">
+                            SELECT FILE
+                        </button>
+</div>
+</section>
+<!-- Progress State: Scanning Skills (Simulated UI) -->
+<section class="bg-surface-container-low rounded-xl p-8 flex items-center justify-between border-l-4 border-tertiary">
+<div class="flex items-center gap-6">
+<div class="relative">
+<div class="w-12 h-12 rounded-full border-4 border-tertiary/20 border-t-tertiary animate-spin"></div>
+<span class="material-symbols-outlined absolute inset-0 flex items-center justify-center text-tertiary text-xl" data-icon="auto_awesome" data-weight="fill">auto_awesome</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Scanning Skills...</h4>
+<p class="text-on-surface-variant text-xs">AI is curating your professional highlights</p>
+</div>
+</div>
+<div class="text-tertiary font-bold font-headline text-lg">74%</div>
+</section>
+<!-- Manual Entry Option -->
+<section class="bg-surface-container-lowest rounded-xl p-8 shadow-sm">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-headline font-bold text-lg">Manual Entry</h3>
+<span class="text-xs font-bold text-on-surface-variant/60 tracking-widest uppercase">Alternative</span>
+</div>
+<div class="space-y-4">
+<div class="relative">
+<label class="absolute -top-2 left-4 px-1 bg-surface-container-lowest text-[10px] font-bold text-primary tracking-widest uppercase">Job Title</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/20 transition-all text-on-surface" placeholder="e.g. Senior Creative Lead" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="relative">
+<label class="absolute -top-2 left-4 px-1 bg-surface-container-lowest text-[10px] font-bold text-on-surface-variant tracking-widest uppercase">Start Date</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/20 transition-all" type="month"/>
+</div>
+<div class="relative">
+<label class="absolute -top-2 left-4 px-1 bg-surface-container-lowest text-[10px] font-bold text-on-surface-variant tracking-widest uppercase">End Date</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/20 transition-all" type="month"/>
+</div>
+</div>
+<button class="w-full py-3 text-primary font-bold text-sm hover:bg-surface-container-high rounded-xl transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="add_circle">add_circle</span>
+                            ADD ANOTHER EXPERIENCE
+                        </button>
+</div>
+</section>
+</div>
+<!-- Right: Preview and Refinement -->
+<div class="lg:col-span-5">
+<div class="glass-panel p-8 rounded-xl border border-white/40 shadow-2xl shadow-slate-900/10 sticky top-28">
+<div class="flex items-center gap-3 mb-8">
+<div class="w-2 h-8 bg-primary rounded-full"></div>
+<h2 class="font-headline font-bold text-2xl tracking-tight">Extracted Intelligence</h2>
+</div>
+<!-- Skills Cluster -->
+<div class="mb-10">
+<p class="text-[10px] font-bold text-on-surface-variant tracking-widest uppercase mb-4">Top Skill Clusters</p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-secondary-fixed text-on-secondary-fixed-variant px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-2">
+                                User Experience Design <span class="material-symbols-outlined text-xs" data-icon="close">close</span>
+</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed-variant px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-2">
+                                React.js <span class="material-symbols-outlined text-xs" data-icon="close">close</span>
+</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed-variant px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-2">
+                                Product Strategy <span class="material-symbols-outlined text-xs" data-icon="close">close</span>
+</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-2">
+                                AI Orchestration <span class="material-symbols-outlined text-xs" data-icon="close">close</span>
+</span>
+<button class="border border-outline-variant/30 text-on-surface-variant px-3 py-1.5 rounded-full text-xs font-semibold hover:bg-surface-container-high transition-colors">
+                                + Add Skill
+                            </button>
+</div>
+</div>
+<!-- Experience Preview List -->
+<div class="space-y-6 mb-12">
+<p class="text-[10px] font-bold text-on-surface-variant tracking-widest uppercase mb-2">Verified Experience</p>
+<!-- Experience Card 01 -->
+<div class="flex gap-4 group">
+<div class="flex flex-col items-center">
+<div class="w-2 h-2 rounded-full bg-primary mt-1.5"></div>
+<div class="w-px h-full bg-outline-variant/30 mt-2"></div>
+</div>
+<div>
+<h5 class="font-bold text-sm leading-none mb-1">Senior Product Designer</h5>
+<p class="text-xs text-on-surface-variant mb-2">TechVision Global • 2021 — Present</p>
+<p class="text-xs text-on-surface-variant/80 leading-relaxed italic">"Spearheaded the redesign of core SaaS dashboard, increasing retention by 24%..."</p>
+</div>
+</div>
+<!-- Experience Card 02 -->
+<div class="flex gap-4 group">
+<div class="flex flex-col items-center">
+<div class="w-2 h-2 rounded-full bg-outline-variant"></div>
+</div>
+<div>
+<h5 class="font-bold text-sm leading-none mb-1">UX Intern</h5>
+<p class="text-xs text-on-surface-variant mb-2">Creative Flow Inc. • 2019 — 2021</p>
+</div>
+</div>
+</div>
+<!-- CTA -->
+<div class="space-y-3">
+<button onclick="window.location.href='dashboard.html'" class="w-full bg-primary text-on-primary py-4 rounded-xl font-bold text-sm tracking-widest uppercase flex items-center justify-center gap-3 transition-all hover:bg-primary-container shadow-xl shadow-primary/20">
+                            REFINE AND CONTINUE
+                            <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<p class="text-center text-[10px] text-on-surface-variant/60 font-medium">You can further edit these details in the next step.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer (Shell Visible) -->
+<footer class="bg-slate-50 dark:bg-slate-950 w-full border-t border-slate-200/50 dark:border-slate-800/50">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 gap-6 max-w-7xl mx-auto">
+<div class="text-lg font-bold text-slate-900 dark:text-white font-headline">SkillSync</div>
+<div class="flex flex-wrap justify-center gap-8 text-slate-500 dark:text-slate-400 font-inter text-sm">
+<a class="hover:text-blue-600 transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-blue-600 transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-blue-600 transition-colors" href="#">Help Center</a>
+<a class="hover:text-blue-600 transition-colors" href="#">API Docs</a>
+</div>
+<p class="text-slate-500 dark:text-slate-400 font-inter text-sm opacity-80">© 2024 SkillSync AI. Curating the future of work.</p>
+</div>
+</footer>
+</body></html>

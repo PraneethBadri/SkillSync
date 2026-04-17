@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#191c1d",
+                    "surface-bright": "#f8f9fa",
+                    "on-secondary-fixed-variant": "#004f4f",
+                    "surface-tint": "#0056d2",
+                    "primary": "#0040a1",
+                    "secondary-fixed": "#93f2f2",
+                    "primary-fixed-dim": "#b2c5ff",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-tertiary": "#ffffff",
+                    "background": "#f8f9fa",
+                    "surface-container": "#edeeef",
+                    "inverse-primary": "#b2c5ff",
+                    "secondary-container": "#90efef",
+                    "error": "#ba1a1a",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#006e6e",
+                    "surface-container-high": "#e7e8e9",
+                    "inverse-surface": "#2e3132",
+                    "surface-variant": "#e1e3e4",
+                    "on-primary-fixed": "#001847",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed": "#002020",
+                    "surface": "#f8f9fa",
+                    "on-surface-variant": "#424654",
+                    "secondary-fixed-dim": "#76d6d5",
+                    "outline-variant": "#c3c6d6",
+                    "tertiary-fixed": "#e8ddff",
+                    "tertiary-fixed-dim": "#cfbdff",
+                    "surface-container-highest": "#e1e3e4",
+                    "outline": "#737785",
+                    "inverse-on-surface": "#f0f1f2",
+                    "on-error": "#ffffff",
+                    "on-background": "#191c1d",
+                    "on-primary-container": "#ccd8ff",
+                    "primary-fixed": "#dae2ff",
+                    "tertiary-container": "#6d23f9",
+                    "surface-dim": "#d9dadb",
+                    "tertiary": "#5300cd",
+                    "on-tertiary-fixed-variant": "#5300cd",
+                    "on-tertiary-fixed": "#22005d",
+                    "on-primary-fixed-variant": "#0040a1",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#e0d2ff",
+                    "primary-container": "#0056d2",
+                    "surface-container-low": "#f3f4f5",
+                    "secondary": "#006a6a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; color: #191c1d; }
+        .font-headline { font-family: 'Manrope', sans-serif; }
+        .glass-effect { backdrop-filter: blur(12px); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-xl shadow-slate-900/5 dark:shadow-none">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<a href="index.html" class="text-2xl font-black text-slate-900 dark:text-white tracking-tighter font-headline block">SkillSync</a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-blue-700 dark:text-blue-400 font-bold border-b-2 border-blue-700 font-label uppercase tracking-wider text-xs" href="#">Find Jobs</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors font-label uppercase tracking-wider text-xs" href="#">Recruiters</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors font-label uppercase tracking-wider text-xs" href="#">How it Works</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 transition-colors font-label uppercase tracking-wider text-xs">Login</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-xl font-bold hover:scale-95 active:duration-100 transition-all font-label uppercase tracking-wider text-xs">Sign Up</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-20 max-w-7xl mx-auto px-6 md:px-8">
+<!-- Job Hero Section -->
+<div class="relative overflow-hidden rounded-xl mb-8">
+<div class="bg-surface-container-lowest p-8 md:p-12 relative z-10">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div class="flex items-center gap-6">
+<div class="w-20 h-20 rounded-xl bg-surface-container flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="minimalist logo of a modern tech company with geometric shapes and soft blue palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKGyG0mUuvw-PkajT5KZDkFNS_E4IHYlGlZ9cbYWCbKGEv3K46RvPBX5Y2UpoDUMdQT6M9Qdv4qqMycRdlNoAsrx77eNEFRstg7jOsIw0qxohD2d0O8K6o6jRY6j2t5GCdI92QOVlFtXIMcAP_ftFnqntcaWVgMDq_b7dXmvmG4Tn-ZFhwYPP6XqMuQj9fXy5vEjXVygjvb8SWAI-1ZSufrS0O4PvMVDTSy9Ba_0bMb51fdWUUmTvcWi6PgfeWeIvWOFY6a3Z6iaI"/>
+</div>
+<div>
+<p class="text-secondary font-bold font-label uppercase tracking-widest text-xs mb-1">Full-Time · Remote</p>
+<h1 class="text-4xl font-extrabold font-headline text-on-surface tracking-tight mb-2">Senior Product Designer</h1>
+<div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-on-surface-variant font-medium">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-base">domain</span> Linear Systems</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-base">location_on</span> San Francisco, CA</span>
+<span class="flex items-center gap-1 font-bold text-primary"><span class="material-symbols-outlined text-base">payments</span> $160k – $220k</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="p-3 rounded-xl bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined">bookmark</span>
+</button>
+<button onclick="window.location.href='resume_upload.html'" class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold text-lg shadow-lg shadow-primary/20 hover:scale-[0.98] transition-transform">
+                            Quick Apply
+                        </button>
+</div>
+</div>
+</div>
+<!-- Subtle gradient background element -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary-fixed/20 to-transparent pointer-events-none"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Left Column: AI Matching & Description -->
+<div class="lg:col-span-2 space-y-8">
+<!-- AI Insight Card -->
+<section class="bg-tertiary-container/10 border-l-4 border-tertiary rounded-xl p-8 relative overflow-hidden">
+<div class="relative z-10">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<h2 class="text-xl font-bold font-headline text-tertiary">Why SkillSync Thinks You're a Great Fit</h2>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<div class="relative w-16 h-16 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-tertiary/20" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-width="4"></circle>
+<circle class="text-tertiary" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-dasharray="176" stroke-dashoffset="14" stroke-width="4"></circle>
+</svg>
+<span class="absolute font-bold text-sm">92%</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Skill Alignment</p>
+<p class="text-sm text-on-surface-variant">Your expertise in Figma and Design Systems matches 9/10 core requirements.</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container">trending_up</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Experience Level</p>
+<p class="text-sm text-on-surface-variant">Your 6 years of tenure exceeds the 5-year minimum for this senior role.</p>
+</div>
+</div>
+</div>
+<div class="space-y-3">
+<p class="text-xs font-bold font-label uppercase tracking-widest text-on-surface-variant">Strongest Skills Matched</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-xs font-semibold">Prototyping</span>
+<span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-xs font-semibold">React.js</span>
+<span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-xs font-semibold">Visual Design</span>
+<span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-xs font-semibold">B2B SaaS</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Job Description Content -->
+<article class="bg-surface-container-lowest rounded-xl p-8 md:p-12 space-y-10">
+<section>
+<h3 class="text-2xl font-bold font-headline mb-6">About the Role</h3>
+<p class="text-lg leading-relaxed text-on-surface-variant font-body">
+                            Linear Systems is looking for a Senior Product Designer to help us redefine the future of developer workflows. You’ll be responsible for taking complex technical concepts and translating them into elegant, intuitive interfaces that thousands of engineers use every day.
+                        </p>
+</section>
+<section>
+<h3 class="text-2xl font-bold font-headline mb-6">Key Responsibilities</h3>
+<ul class="space-y-4 list-none">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<p class="text-on-surface-variant leading-relaxed">Lead the end-to-end design process for our core task management features.</p>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<p class="text-on-surface-variant leading-relaxed">Partner with engineering to build and maintain our design system, "Spark".</p>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<p class="text-on-surface-variant leading-relaxed">Conduct user research sessions to validate prototypes and identify pain points.</p>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<p class="text-on-surface-variant leading-relaxed">Mentor junior designers and contribute to a culture of high-quality craft.</p>
+</li>
+</ul>
+</section>
+<section>
+<h3 class="text-2xl font-bold font-headline mb-6">Requirements</h3>
+<div class="grid md:grid-cols-2 gap-6">
+<div class="p-6 bg-surface-container rounded-lg">
+<p class="font-bold mb-2">Qualifications</p>
+<p class="text-sm text-on-surface-variant">5+ years of experience in product design, specifically in SaaS or B2B tools.</p>
+</div>
+<div class="p-6 bg-surface-container rounded-lg">
+<p class="font-bold mb-2">Technical Skills</p>
+<p class="text-sm text-on-surface-variant">Expertise in Figma, high-fidelity prototyping tools, and basic React/CSS understanding.</p>
+</div>
+</div>
+</section>
+</article>
+</div>
+<!-- Right Column: Metadata & Sidebar -->
+<div class="space-y-8">
+<!-- Apply Sidebar Card -->
+<div class="bg-surface-container-highest rounded-xl p-8 sticky top-28">
+<h4 class="text-lg font-bold font-headline mb-6">Apply for this position</h4>
+<div class="space-y-6">
+<div class="p-4 bg-surface-container-lowest rounded-lg">
+<p class="text-xs font-bold font-label uppercase tracking-widest text-on-surface-variant mb-2">Active Profile</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed-dim"></div>
+<div>
+<p class="text-sm font-bold">Alex Rivera</p>
+<p class="text-xs text-on-surface-variant">Product Designer III</p>
+</div>
+</div>
+</div>
+<button onclick="window.location.href='resume_upload.html'" class="w-full bg-primary text-on-primary py-4 rounded-xl font-bold hover:shadow-xl transition-all shadow-primary/20">
+                            Quick Apply with SkillSync
+                        </button>
+<p class="text-xs text-center text-on-surface-variant px-4">
+                            By clicking, you'll share your profile and resume directly with the hiring team at Linear Systems.
+                        </p>
+<div class="pt-6 border-t border-outline-variant/30 space-y-4">
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Posted</span>
+<span class="font-medium">2 days ago</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Applicants</span>
+<span class="font-medium">48 total</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Role Type</span>
+<span class="font-medium">Individual Contributor</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Company Preview -->
+<div class="bg-surface-container-low rounded-xl p-8">
+<h4 class="text-lg font-bold font-headline mb-4">About Linear Systems</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">
+                        Linear Systems is building the next generation of productivity tools for engineering teams. We're a remote-first team of 150 people backed by Sequoia and Index Ventures.
+                    </p>
+<a class="text-primary font-bold text-sm flex items-center gap-1" href="#">
+                        View Company Profile <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Recommended Jobs -->
+<section class="mt-20">
+<div class="flex items-center justify-between mb-8">
+<h3 class="text-2xl font-extrabold font-headline">Similar Opportunities</h3>
+<a class="text-primary font-bold text-sm" href="#">View all jobs</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Rec Card 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl hover:shadow-2xl hover:shadow-on-surface/5 transition-all group">
+<div class="w-12 h-12 rounded-lg bg-surface-container mb-4 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="vibrant abstract logo for a creative technology company with warm orange and red gradients" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyLwtCDiNoq2ibIYRn2H14k2mX6hlSu3QZJvTy5Jwmc7T8cO6R7bxWXzJCVeqDk2f2cCeTvHVxibM5H26AG1wghzwunHyI4CoWJL5PVfzUeiEGz9jhDlcA0eLfY9GRKGOOBetlrVhrvxElbrlFZzDqAaLOt39XUHoR41rej3Cj5uNk5-n_vrrWKbtAxNM-NIIosNOqKdNLnMkKvQoBU520OLCadknG6Kj2n2cfybTptUdnS8jFSzh5LJJMhgZbstRVAh0wDj_kLeo"/>
+</div>
+<h5 class="font-bold text-on-surface group-hover:text-primary transition-colors mb-1">Senior UX Designer</h5>
+<p class="text-sm text-on-surface-variant mb-4">Abstract Labs · Remote</p>
+<div class="flex items-center justify-between">
+<span class="text-sm font-bold text-secondary">$145k – $180k</span>
+<span class="text-xs px-2 py-1 bg-tertiary-container/10 text-tertiary rounded font-bold">88% Match</span>
+</div>
+</div>
+<!-- Rec Card 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl hover:shadow-2xl hover:shadow-on-surface/5 transition-all group">
+<div class="w-12 h-12 rounded-lg bg-surface-container mb-4 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="clean professional corporate logo for a finance tech startup with deep forest green accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrLdKGmyVkOCkFN7nZWwkL3F4Iiwfkqv3tkfdeC28gL0I2qpoWVLHmjFGndapTyAPuTiCuATKOeWJAKiDt8h2_ZqLpwG_bFJ1x4KCXPZB3XNb068Ocvho5po57WNNLIR6LwKhv5hy08mr1qHAu7VchSpJFglVVs4BQ-bEzWHN--t3AOrCQC-lRdjAdBdTo4EAi5Iww8yPqkydsMaxrvKGEH6jdsHdPnM9W-NOd7AXGk-PgilKAwAY7PWD-yd6fS2LHMjCM0UL_Qtc"/>
+</div>
+<h5 class="font-bold text-on-surface group-hover:text-primary transition-colors mb-1">Product Designer</h5>
+<p class="text-sm text-on-surface-variant mb-4">Vercel Inc · Hybrid</p>
+<div class="flex items-center justify-between">
+<span class="text-sm font-bold text-secondary">$150k – $195k</span>
+<span class="text-xs px-2 py-1 bg-tertiary-container/10 text-tertiary rounded font-bold">94% Match</span>
+</div>
+</div>
+<!-- Rec Card 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl hover:shadow-2xl hover:shadow-on-surface/5 transition-all group">
+<div class="w-12 h-12 rounded-lg bg-surface-container mb-4 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="minimalist wordmark logo for a modern design studio with high-end typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_9DxrXaqMgQusBcDQScXPr3Z2B5IkJUg-D6N55eIm_79Ij6mjRWmsSOTvLEnv0z0vH7lZSDXYUGFxH0BIaHJKaYarnbOj_q4-Y1kEcvM-LsmL3dqerI9gwuJF682zIKJu9yMBBxjimkEO1M7Ya_JG_GlfW9XWCWdvU7f-vhpThwMSoz6fhev15ci1ZAyu563m61fCksLkGg8yAJvR_dapsZpCjpx0F0qCjxYhlTRek1BvLKzt26nP-tT1ecMuVzSQUHvuzDF2SWs"/>
+</div>
+<h5 class="font-bold text-on-surface group-hover:text-primary transition-colors mb-1">Design Systems Lead</h5>
+<p class="text-sm text-on-surface-variant mb-4">Stripe · NYC</p>
+<div class="flex items-center justify-between">
+<span class="text-sm font-bold text-secondary">$180k – $240k</span>
+<span class="text-xs px-2 py-1 bg-tertiary-container/10 text-tertiary rounded font-bold">85% Match</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200/50 dark:border-slate-800/50 bg-slate-50 dark:bg-slate-950">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 gap-6 max-w-7xl mx-auto">
+<div class="flex flex-col items-center md:items-start gap-2">
+<div class="text-lg font-bold text-slate-900 dark:text-white font-headline">SkillSync</div>
+<p class="text-slate-500 dark:text-slate-400 font-inter text-sm">© 2024 SkillSync AI. Curating the future of work.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-slate-500 dark:text-slate-400 font-inter text-sm hover:text-blue-600 transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 font-inter text-sm hover:text-blue-600 transition-colors" href="#">Terms of Service</a>
+<a class="text-slate-500 dark:text-slate-400 font-inter text-sm hover:text-blue-600 transition-colors" href="#">Help Center</a>
+<a class="text-slate-500 dark:text-slate-400 font-inter text-sm hover:text-blue-600 transition-colors" href="#">API Docs</a>
+</div>
+</div>
+</footer>
+</body></html>
